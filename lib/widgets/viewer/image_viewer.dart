@@ -389,6 +389,7 @@ class _ImageViewerState extends State<ImageViewer>
       widget.onChanged?.call(_images);
       return;
     });
+    return null;
   }
 
   /// Build reorderable selected image list.
@@ -512,8 +513,7 @@ class _ImageViewerState extends State<ImageViewer>
                                       border: Border.all(
                                           color: isSelected
                                               ? Colors.white
-                                              : Colors.grey,
-                                          width: 1),
+                                              : Colors.grey),
                                       borderRadius: const BorderRadius.all(
                                           Radius.circular(10))),
                                   padding: const EdgeInsets.symmetric(
@@ -608,7 +608,6 @@ class _ImageViewerState extends State<ImageViewer>
                                   children: [
                                     TextButton(
                                       style: TextButton.styleFrom(
-                                        primary: Colors.black87,
                                         backgroundColor: Colors.grey.shade200,
                                         padding: EdgeInsets.zero,
                                         shape: const RoundedRectangleBorder(
@@ -627,7 +626,6 @@ class _ImageViewerState extends State<ImageViewer>
                                     ),
                                     TextButton(
                                       style: TextButton.styleFrom(
-                                        primary: Colors.blue,
                                         backgroundColor: Colors.blue,
                                         padding: EdgeInsets.zero,
                                         shape: const RoundedRectangleBorder(
@@ -672,7 +670,6 @@ class _ImageViewerState extends State<ImageViewer>
           left: 10,
           child: TextButton(
             style: TextButton.styleFrom(
-              primary: Colors.blue,
               backgroundColor: Colors.blue,
               padding: EdgeInsets.zero,
               shape: const RoundedRectangleBorder(
